@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -30,12 +30,14 @@ li a:hover {
 <body>
 
 <ul>
-  <li><a class="active" href="#index">Home</a></li>
+  <li><a class="active" href="#home">Home</a></li>
   <li><a href="#3lagenmodel">3 lagen model</a></li>
   <li><a href="#fysiekelaag">Fysieke laag</a></li>
-  <li><a href="#toepassingslaag">Toepassings laag</a></li>
-  <li><a href="#logischelaag">Logische laag</a></li>
+  <li><a href="#toepassinslaag">Toepassinslaag</a></li>
+  <li><a href="#logischelaag">Logischelaag</a></li>
 </ul>
 
 </body>
 </html>
+
+
