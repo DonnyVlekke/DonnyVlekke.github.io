@@ -1,48 +1,75 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
- <head>
-        <title>Operating system</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="opmaak.css">
- </head>
- <body>
-  <div class="menu-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="3lagenmodel.html">Drielagenmodel <i class="fas fa-caret-down"></i></a>
-  
-            <div class="dropdown-menu">
+
+<!--De pagina een titel geven en links toevoegen zodat de opmaak klopt-->
+<head>
+  <title>Operating system</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <link rel="stylesheet" href="/opmaak.css">
+</head>
+
+<!--dropdown menu als horizontale 'bar'-->
+<body>
+<div class="menu-bar">
+<h3 class="logo">Computer<span>Uitgelegd</span></h3>
+<ul>
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/html/3lagenmodel.html">Drielagenmodel <i class="fas fa-caret-down"></i></a>
+
+      <div class="dropdown-menu">
+          <ul>
+            <li><a href="/html/fysiekelaag.html">Fysieke laag <i class="fas fa-caret-right"></i></a>
+              
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="/html/processor, kloksnelheid en verwerkingssnelheid.html">Processor en kloksnelheid</a></li>
+                    <li><a href="/html/geheugen, ram, rom en permanent.html">RAM, ROM en permanent</a></li>
+                    <li><a href="/html/randapparatuur.html">Randapparatuur</a></li>
+                  </ul>
+                </div>
+              </li>
+            <li><a href="/html/logischelaag.html">Logische laag<i class="fas fa-caret-right"></i></a>
+                
+              <div class="dropdown-menu-1">
                 <ul>
-                  <li><a href="fysiekelaag.html">Fysieke laag <i class="fas fa-caret-right"></i></a>
-                    
-                      <div class="dropdown-menu-1">
-                        <ul>
-                          <li><a href="processor, kloksnelheid en verwerkingssnelheid.html">Processor, kloksnelheid en verwerkingssnelheid</a></li>
-                          <li><a href="geheugen, ram, rom en permanent.html">Geheugen, RAM, ROM en permanent</a></li>
-                          <li><a href="randapparatuur.html">Randapparatuur</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                  <li><a href="logischelaag.html">Logische laag<i class="fas fa-caret-right"></i></a>
-                      
-                    <div class="dropdown-menu-1">
-                      <ul>
-                        <li><a href="operatingsystem.html">Operating system</a></li>
-                      </ul>
-                  </div>
-                  </li>
-                  <li><a href="toepassingslaag.html">Toepassings laag<i class="fas fa-caret-right"></i></a>
-                  
-                      <div class="dropdown-menu-1">
-                          <ul>
-                            <li><a href="apps.html">Apps</a></li>
-                          </ul>
-                        </div>
-                      </li>
+                  <li><a href="/html/operatingsystem.html">Operating system</a></li>
                 </ul>
-              </div>
-      </ul>
-    </div>
-  Uitleg over 
-  </body>
+            </div>
+            </li>
+            <li><a href="/html/toepassingslaag.html">Toepassingen laag<i class="fas fa-caret-right"></i></a>
+            
+                <div class="dropdown-menu-1">
+                    <ul>
+                      <li><a href="/html/apps.html">Apps en API</a></li>
+                    </ul>
+                  </div>
+                </li>
+          </ul>
+        </div>
+  </li>
+  </li>
+</ul>
+</div>
+
+<!--De tekst voor deze pagina-->
+<div class="box">
+  <h1>Operating system</h1>
+
+  <p>De logische laag van een apparaat bestaat uit software die ervoor zorgt dat toepassingen op het apparaat uitgevoerd kunnen worden. Bij een smartphone bestaat deze software voornamelijk uit het besturingssysteem, ofwel het operating system. Deze regelt de communicatie tussen de toepassingen laag en de fysieke laag. Daarnaast regelt het operating system de communicatie tussen onderdelen binnen de computer.</p>
+  <p>Het besturingssysteem heeft 3 taken:</p>
+  <p> - beheer van randapparatuur: door middel van drivers alle hardware-onderdelen van een apparaat aansturen. </p>
+  <p> - bestandsbeheer: onthouden waar data is opgeslagen en kijken waar ruimte is voor het opslaan van nieuwe data.</p>
+  <p> - taakbeheer: alle taken die door een computer uitgevoerd moeten worden. De ‘aandacht’ van de CPU moet worden verdeeld over al deze taken, iets waar het operating system bij helpt.</p>
+
+  <img src="/images/Inf. operating system.PNG" alt="vb operating system" width="auto" height="200">
+</div>
+
+<!--footer voor deze pagina-->
+<div class="footer">
+  <p1>Gemaakt door Rabia van Vliet</p1>
+</div>
+
+</body>
 </html>

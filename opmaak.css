@@ -1,58 +1,36 @@
-
-body {
-  background-color:white;
+/*basic kleuren die ik gebruik in mijn website*/
+:root {
+  --color-primary: #ff00d4;
+  --color-white: #e9e9e9;
+  --color-black: #1d2a3a;
+  --color-black-1: #212b38;
 }
-ul {
-  list-style-type: none;
+
+* {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #38444d;
+  box-sizing: border-box;
 }
 
-li {
-  float: left;
+/*achtergrondafbeelding instellen*/
+body {
+  font-family: sans-serif;
+  background-position: left top;
+  background-image: url("/Inf. Achtergrond2.webp");
+  background-attachment: fixed;
 }
 
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/*De opmaak voor het logo*/
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.logo span {
+  color: var(--color-primary);
 }
 
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
+/*drop down menu opmaak*/
 .menu-bar {
   background-color: var(--color-black);
   height: 80px;
@@ -91,12 +69,12 @@ li.dropdown {
 }
 
 .fas {
-  float: left;
+  float: right;
   margin-left: 10px;
   padding-top: 3px;
 }
 
-
+/* dropdown menu opmaak bij hoveren */
 .dropdown-menu {
   display: none;
 }
@@ -131,7 +109,7 @@ li.dropdown {
   background-color: var(--color-black);
 }
 
-
+/*opmaak voor basic tekst*/
 p {
   margin: 15px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -140,7 +118,7 @@ p {
   color: var(--color-black);
   text-indent: 15px;
 }
-
+/* een witte 'box' waarin alle tekst komt te staan */
 .box {
   background-color: white;
   border: 5px solid white;
@@ -149,7 +127,7 @@ p {
   margin: 50px 200px;
 }
 
-
+/*De opmaak voor de headers*/
 h1 {
   text-transform: uppercase;
   margin: 15px;
@@ -163,4 +141,31 @@ h2 {
   text-decoration-color: var(--color-black);
   color: var(--color-black);
   margin: 15px;
+}
+
+/*De opmaak voor de footer*/
+.footer {
+  padding: 15px;
+  text-align: center;
+  background:var(--color-black);
+  margin-top: 20px;
+}
+
+p1 {
+  color:var(--color-white)
+}
+
+/*De opmaak voor de interne links, die niet bij het dropdown menu horen*/
+.box a:link, a:visited {
+  background-color: var(--color-black);
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.box a:hover, a:active {
+  background-color: var(--color-white);
+  color: var(--color-black)
 }
