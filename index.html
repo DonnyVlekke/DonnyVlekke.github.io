@@ -1,20 +1,167 @@
 <!DOCTYPE html>
-<html> 
- <head>
-     <title>Donny zijn site</title>
-     <link rel="stylesheet" type="text/css" href="opmaak.css">
-     <meta charset="utf-8">
- </head>
-  <body> 
-   
-    <ul> 
-      <li><a href="index.html">Home</a></li>
-      <li><a href="3lagenmodel.html">3 lagen model</a></li>
-      <li><a href="logischelaag.html">Logische laag</a></li>
-      <li><a href="toepassingslaag.html">Toepassingslaag</a></li>
-      <li><a href="fysiekelaag.html">Fysieke laag</a></li>
-   </ul>
+<html lang="en">
+<head>
+<title>Informatica website Milan en Quinten</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
 
-   Hier komt tekst 
-   
-  </body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Informatica<br>Website</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Informatica</a> 
+    <a href="#3lagenmodel" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">3 Lagenmodel</a> 
+    <a href="#Moederbord" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Moederbord</a> 
+    <a href="#Processor en Geheugen" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Processor en Geheugen</a>  
+    <a href="#Besturingsysteem" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Besturingssysteem</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Informatica Website</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="Informatica Website">
+    <h1 class="w3-jumbo"><b>Informatica Website</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Informatica.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+<p>Informatica is een wetenschap die zich bezighoudt met alle onderdelen van computersystemen en netwerken,
+ van theorie tot toepassing. Als student Informatica ontwikkel je zowel je theoretische kennis van onder andere wiskunde en logica, 
+ én doe je praktische ervaring op met programmeren en ontwerpen.<p>
+  </div>
+
+  <!--
+  <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+-->
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <a id="3lagenmodel"></a>
+<!-- 3 Lagenmodel -->
+  <div class="w3-container" id="3 Lagenmodel" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>3 Lagenmodel.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Het drie lagen model bestaat uit de toepassingslaag, logische laag en de fysieke laag.
+Ze hebben allemaal een andere functie, ook is de ene een hardware en de andere een software. De software bestaat uit:<br>
+-Besturingssysteem<br>
+-Drivers<br>
+-Applicaties<br>
+      <img src="./3lagen.png"><br>
+<br><br>
+Tussen de fysieke laag en de toepassingslaag heb je twee koppelingen:<br>
+-Besturingssysteem<br>
+-Drivers<br>
+Voorbeelden van applicatie kunnen zijn:<br>
+-Playstore<br>
+-Appstore<br>
+<br><br>
+Er zijn drie verschillende soorten interfaces:<br>
+1.Hardware-interface, deze zorgt voor een elektronische verbinding tussen fysieke onderdelen zoals de verbinding tussen de geheugen en processor.<br>
+2.Software-interface, deze komt kijken bij apps die je wilt installeren op je telefoon of andere apparaten.<br>
+3.User Interface, deze communiceert met de eindgebruiker:<br>
+a.GUI: (graphical user interface)<br>
+b.VUI: (voice user interface)<br>
+c.CLI: (command line interface)</p>
+  </div>
+
+  <a id="Moederbord"></a>
+  <!-- Moederbord -->
+  <div class="w3-container" id="Moederbord" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Moederbord.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Bij dit kopje geven we informatie over het moederbord.</p>
+    <p>Het moederbord vormt het kloppend hart van je computer. Het is een printplaat die alle componenten van stroom voorziet en met elkaar laat communiceren. Je processor, werkgeheugen, geluidskaart, videokaart en andere onderdelen zijn dus allemaal aangesloten op het moederbord.
+    </p>
+    <img src="./moederbord.jpg"><br>
+  </div>
+
+  <a id="Processor en Geheugen"></a>
+  <!-- Processor en Geheugen -->
+  <div class="w3-container" id="Processor en Geheugen" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Processor en Geheugen.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Kernapperatuur van een computer</p>
+    <p>Het ram-geheugen staat voor random access memory. De processor kan niet zonder ram geheugen en andersom kan het het ram geheugen niet zonder de processor, ook wel CPU genoemd. Het RAM geheugen heeft als functie het tijdelijk bewaren van je besturingssysteem en programma’s die je open hebt staan. Het CPU zorgt ervoor dat alles wordt uitgevoerd.
+Als je een CPU hebt maar geen RAM geheugen heb je niks aan je CPU, deze hebben elkaar namelijk nodig om een taak of instructie uit te voeren.</p>
+    <img src="./cpu.jpg"><br>
+  <a id="Besturingsysteem"></a>
+  <!-- Besturingsysteem -->
+  <div class="w3-container" id="Besturingsysteem" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Besturingsysteem.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Het besturingssysteem zorgt ervoor dat er duidelijke communicatie is tussen de applicatiesoftware en de hardware. Bij alle taken die worden uitgevoerd maken de applicaties gebruik van besturingssystemen, bijvoorbeeld als je een bestand verwijderd. 
+Voorbeelden van besturingssystemen zijn:<br>
+1. Apple<br>
+2. Chrome<br>
+3. Windows<br>
+4. Android<br>
+
+Het besturingssysteem kent drie functies:<br>
+1. Beheer van randapparatuur<br>
+2. Bestandsbeheer<br>
+3. Taakbeheer<br>
+Het besturingssysteem zorgt voor aansturing van de hardware, het enige probleem is dat het besturingssysteem zelf geen kennis heeft dus wordt er gebruik gemaakt van drivers. Ook zorgt het besturingssysteem ervoor dat alle taken eerlijk verdeeld worden over de CPU.</p>
+    <img src="./besturings.jpg"><br>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="Quinten en Milan" title="Quinten en Milan" target="_blank" class="w3-hover-opacity">Quinten en Milan</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
